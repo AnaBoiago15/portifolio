@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meu futuro profissional: portfólio de futura pedagoga">
+  <title>Meu Futuro Profissional | Pedagogia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header class="topo">
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#inicio" class="logo"> <span>Meu Futuro</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="menu-links" id="menuLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#profissao">Profissão</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#tecnologia">Tecnologia</a></li>
+      </ul>
+      <button class="tema-btn" id="temaBtn" aria-label="Alternar tema">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. APRESENTAÇÃO -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="etiqueta"> Olá, seja bem-vindo(a)!</p>
+        <h1>Eu sou <span class="destaque">Ana Rita Boiago Evangelista</span></h1>
+        <p class="subtitulo">Estudante de Desenvolvimento de Sistemas e futura <strong>pedagoga</strong>.</p>
+        <p>
+          Acredito que educar é abrir portas. Gosto de aprender, de ensinar e de
+          descobrir jeitos diferentes de fazer as pessoas entenderem o mundo.
+          Escreva aqui uma descrição sua, com suas palavras: seus gostos,
+          sua personalidade e o que te move.
+        </p>
+        <div class="hero-botoes">
+          <a href="#profissao" class="btn btn-principal">Conheça meu sonho</a>
+          <button class="btn btn-secundario" id="dicaBtn">💡 Dica de educador</button>
+        </div>
+        <p class="dica" id="dicaTexto" aria-live="polite"></p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="caderno">
+          <div class="caderno-espiral"></div>
+          <p class="manuscrito">Hoje eu aprendo,<br>amanhã eu ensino!</p>
+          <div class="lapis"></div>
+        </div>
+        <div class="post-it p1">Curiosidade</div>
+        <div class="post-it p2">Empatia</div>
+        <div class="post-it p3">Criatividade</div>
+      </div>
+    </section>
+
+    <!-- 2. TRAJETÓRIA ACADÊMICA -->
+    <section id="trajetoria" class="secao">
+      <h2 class="titulo"> Minha Trajetória Acadêmica</h2>
+      <p class="intro">Clique em cada etapa para ver os detalhes.</p>
+
+      <div class="linha-tempo">
+        <article class="etapa">
+          <button class="etapa-btn" aria-expanded="false">
+            <span class="bolinha" style="--cor: var(--amarelo)">1</span>
+            <span class="etapa-titulo">Ensino Fundamental</span>
+            <span class="seta">▾</span>
+          </button>
+          <div class="etapa-conteudo">
+            <p>Realizei o Ensino Fundamental na escola Sesi Joelmir Betting CE-370. </p>
+          </div>
+        </article>
+
+        <article class="etapa">
+          <button class="etapa-btn" aria-expanded="false">
+            <span class="bolinha" style="--cor: var(--coral)">2</span>
+            <span class="etapa-titulo">Ensino Médio</span>
+            <span class="seta">▾</span>
+          </button>
+          <div class="etapa-conteudo">
+            <p> Atualmente estou terminando o Ensino Médio na escola Sesi Joelmir Betting CE-370 vinculado ao curso técnico do SENAI. Foi nessa etapa que começei a ter interesse na área da educação e pesquisar mais sobre.</p>
+          </div>
+        </article>
+
+        <article class="etapa">
+          <button class="etapa-btn" aria-expanded="false">
+            <span class="bolinha" style="--cor: var(--azul)">3</span>
+            <span class="etapa-titulo">Desenvolvimento de Sistemas (SENAI)</span>
+            <span class="seta">▾</span>
+          </button>
+          <div class="etapa-conteudo">
+            <p>Atualmente estou encerrando o curso técnico de Desenvolvimento de Sistemas pelo SENAI. Aqui aprendi lógica de programação, HTML, CSS, JavaScript, Flutter e trabalho em equipe. Essa etapa foi muito importante na minha vida, pois aprendi a me organizar melhor e adquiri uma responsabilidade profissional.</p>
+          </div>
+        </article>
+
+        <article class="etapa">
+          <button class="etapa-btn" aria-expanded="false">
+            <span class="bolinha" style="--cor: var(--verde)">4</span>
+            <span class="etapa-titulo">Próximo passo: Pedagogia</span>
+            <span class="seta">▾</span>
+          </button>
+          <div class="etapa-conteudo">
+            <p>Estou concluindo o Ensino Médio em 2026 e meu próximo passo será ingressar na faculdade UNIFAE, onde cursarei Pedagogia.
+               Quero aprofundar meus conhecimentos sobre educação, aprendizagem e desenvolvimento infantil, para me preparar e construir minha carreira como educadora. 
+               Vejo essa nova etapa como uma oportunidade de crescimento pessoal e profissional, realizando um objetivo importante para o meu futuro.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. PROFISSÃO DESEJADA -->
+    <section id="profissao" class="secao secao-destaque">
+      <h2 class="titulo"> A Profissão dos Meus Sonhos</h2>
+      <div class="duas-colunas">
+        <div>
+          <h3>Pedagoga</h3>
+          <p>
+            Quero ser pedagoga para ajudar crianças e jovens a descobrirem
+            o prazer de aprender. O pedagogo planeja, orienta e acompanha o
+            desenvolvimento de cada aluno, dentro e fora da sala de aula.
+          </p>
+          <p>
+            <strong>Por que escolhi essa carreira?</strong> No ano de 2025 ingressei como estagiária na escola Alfredo Guedes na cidade de Tambaú-SP.
+            Ao decorrer do ano, começei a despertar um interrese na área da educação infantil, e percebi que era algo que eu realmente gostava, ajuda-los a descobrir
+            como o mundo funciona através da educação.
+          </p>
+        </div>
+        <ul class="areas">
+          <li>🏫 Educação Infantil</li>
+          <li>🧩 Pedagogia escolar</li>
+          <li>🤝 Educação inclusiva</li>
+          <li>🏢 Pedagogia empresarial</li>
+          <li>🎨 Ludopedagogia</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. OBJETIVOS PROFISSIONAIS -->
+    <section id="objetivos" class="secao">
+      <h2 class="titulo"> Meus Objetivos</h2>
+      <p class="intro">Toque nos cartões para virar e ver o plano.</p>
+
+      <div class="cartoes">
+        <div class="cartao" tabindex="0" role="button" aria-pressed="false">
+          <div class="cartao-interno">
+            <div class="cartao-frente" style="--cor: var(--amarelo)"><span>🎓</span><h3>Curto prazo</h3></div>
+            <div class="cartao-verso"><p>Concluir o curso técnico e o ensino médio e me preparar para ingressar em uma faculdade.</p></div>
+          </div>
+        </div>
+        <div class="cartao" tabindex="0" role="button" aria-pressed="false">
+          <div class="cartao-interno">
+            <div class="cartao-frente" style="--cor: var(--coral)"><span>🏛️</span><h3>Médio prazo</h3></div>
+            <div class="cartao-verso"><p>Ingressar na faculdade de Pedagogia e participar de estágios em escolas.</p></div>
+          </div>
+        </div>
+        <div class="cartao" tabindex="0" role="button" aria-pressed="false">
+          <div class="cartao-interno">
+            <div class="cartao-frente" style="--cor: var(--azul)"><span>🌱</span><h3>Longo prazo</h3></div>
+            <div class="cartao-verso"><p>Atuar como pedagoga, fazer pós-graduação e criar projetos educativos com tecnologia.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HABILIDADES E INTERESSES -->
+    <section id="habilidades" class="secao secao-destaque">
+      <h2 class="titulo"> Habilidades e Interesses</h2>
+
+      <div class="duas-colunas">
+        <div class="barras">
+          <h3>Minhas habilidades</h3>
+          <div class="barra" data-valor="85"><span>Comunicação</span><div class="trilho"><div class="preenche"></div></div></div>
+          <div class="barra" data-valor="87"><span>Criatividade</span><div class="trilho"><div class="preenche"></div></div></div>
+          <div class="barra" data-valor="75"><span>Trabalho em equipe</span><div class="trilho"><div class="preenche"></div></div></div>
+          <div class="barra" data-valor="70"><span>HTML, CSS e JavaScript</span><div class="trilho"><div class="preenche"></div></div></div>
+          <div class="barra" data-valor="90"><span>Paciência e empatia</span><div class="trilho"><div class="preenche"></div></div></div>
+        </div>
+
+        <div>
+          <h3>Interesses</h3>
+          <div class="chips">
+            <span class="chip">📚 Leitura</span>
+            <span class="chip">🎨 Arte</span>
+            <span class="chip">🎵 Música</span>
+            <span class="chip">🧸 Brincadeiras</span>
+            <span class="chip">💻 Tecnologia</span>
+            <span class="chip">🌍 Psicologia infantil</span>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TECNOLOGIA NA PROFISSÃO -->
+    <section id="tecnologia" class="secao">
+      <h2 class="titulo"> Tecnologia na Pedagogia</h2>
+      <p class="intro">Escolha um tema:</p>
+
+      <div class="abas" role="tablist">
+        <button class="aba ativa" role="tab" data-alvo="t1">Aulas interativas</button>
+        <button class="aba" role="tab" data-alvo="t2">Inclusão</button>
+        <button class="aba" role="tab" data-alvo="t3">Organização</button>
+      </div>
+
+      <div class="aba-painel mostrar" id="t1">
+        <p>Jogos, quizzes, vídeos e lousas digitais deixam as aulas mais divertidas e ajudam os alunos a participarem ativamente.</p>
+      </div>
+      <div class="aba-painel" id="t2">
+        <p>Leitores de tela, legendas e aplicativos de comunicação ajudam a incluir alunos com deficiência, garantindo que todos aprendam juntos.</p>
+      </div>
+      <div class="aba-painel" id="t3">
+        <p>Planilhas, plataformas escolares e sistemas de acompanhamento facilitam planejar aulas e registrar o desenvolvimento de cada aluno.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por <strong>Ana Rita Boiago Evangelista</strong> · Projeto SENAI · Desenvolvimento de Sistemas</p>
+    <a href="#inicio">↑ Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
